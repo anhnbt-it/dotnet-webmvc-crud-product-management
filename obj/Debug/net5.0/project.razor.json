@@ -15638,11 +15638,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/anhnbt/Documents/dotnet/crud-web-application/Views/HelloWorld/Welcome.cshtml",
-      "TargetPath": "Views\\HelloWorld\\Welcome.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/home/anhnbt/Documents/dotnet/crud-web-application/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -15655,11 +15650,6 @@
     {
       "FilePath": "/home/anhnbt/Documents/dotnet/crud-web-application/Views/User/Login.cshtml",
       "TargetPath": "Views\\User\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/anhnbt/Documents/dotnet/crud-web-application/Views/HelloWorld/Index.cshtml",
-      "TargetPath": "Views\\HelloWorld\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
