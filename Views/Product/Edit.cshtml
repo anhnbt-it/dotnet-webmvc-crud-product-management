@@ -1,0 +1,34 @@
+@model crud_web_application.Models.Product;
+@{
+    ViewData["title"] = "Chinh sua " + @Model.Name;
+}
+
+<div class="card">
+    <div class="card-header clearfix">
+        <h1 class="h6 float-left">Chinh sua @Model.Name</h1>
+        <a href="~/Product" class="float-right btn btn-outline-dark">Quay lai</a>
+    </div>
+    <div class="card-body">
+        <form action="~/Product/Edit" method="post">
+            <input type="hidden" asp-for="Id">
+            <div class="row form-group">
+                <label for="name" class="col-form-label col-md-2">Ten san pham</label> 
+                <div class="col-md-10">
+                    <input type="text" asp-for="Name" class="form-control">
+                </div>
+            </div>
+            <div class="row form-group">
+                <label for="price" class="col-form-label col-md-2">Gia san pham</label> 
+                <div class="col-md-10">
+                    <input type="number" asp-for="Price" class="form-control">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-10 offset-2">
+                    <button type="submit" class="btn btn-primary">Cap nhat</button>
+                    <button type="reset" class="btn btn-outline-dark">Nhap lai</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

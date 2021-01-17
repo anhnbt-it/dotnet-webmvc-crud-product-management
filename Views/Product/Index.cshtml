@@ -1,0 +1,39 @@
+@{
+    ViewData["title"] = "Danh sach san pham";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h1 class="h6">Danh sach san pham</h1>
+    </div>
+    <div class="card-body">
+        @if (TempData["message"] != null)
+        {
+            <div class="alert alert-info">@TempData["message"]</div>
+        }
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Ten san pham</th>
+                    <th scope="col">Gia san pham</th>
+                    <th scope="col">Hanh dong</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in ViewBag.products)
+                {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <td><a href="~/Product/Details?id=@item.Id" title="@item.Name">@item.Name</a></td>
+                        <td>@item.Price</td>
+                        <td>
+                            <a href="~/Product/Edit?id=@item.Id" class="btn btn-outline-dark">Sua</a>
+                            <a href="~/Product/Delete?id=@item.Id" class="btn btn-outline-danger">Xoa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div><!-- /.card-body -->
+</div><!-- /.card -->

@@ -1,0 +1,5 @@
+System.Collections.Generic.List`1[crud_web_application.Models.Product]
+System.Collections.Generic.List`1[crud_web_application.Models.Product]
+System.Collections.Generic.List`1[crud_web_application.Models.Product]
+System.Collections.Generic.List`1[crud_web_application.Models.Product]
+System.Collections.Generic.List`1[crud_web_application.Models.Product]

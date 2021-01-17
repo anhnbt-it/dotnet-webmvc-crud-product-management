@@ -1,0 +1,22 @@
+@model crud_web_application.Models.Product;
+@{
+    ViewData["title"] = @Model.Name;
+}
+
+<div class="card">
+    <div class="card-header clearfix">
+        <h1 class="h6 float-left">@Model.Name</h1>
+        <a href="~/Product" class="float-right btn btn-outline-dark btn-sm">Quay lai</a>
+    </div>
+    <div class="card-body">
+        <ul>
+            <li>ID: @Model.Id</li>
+            <li>Ten san pham: @Model.Name</li>
+            <li>Gia san pham: @Model.Price</li>
+        </ul>
+        <div class="text-center">
+            <a href="~/Product/Edit?id=@Model.Id" class="btn btn-outline-dark">Chinh sua</a>
+            <a href="~/Product/Delete?id=@Model.Id" class="btn btn-outline-dark">Xoa</a>
+        </div>
+    </div>
+</div>
